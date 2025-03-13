@@ -4,7 +4,8 @@ import torch
 import copy
 from torch.nn import functional as F
 from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.utils import deprecate, is_accelerate_available, logging, randn_tensor, replace_example_docstring
+from diffusers.utils import deprecate, is_accelerate_available, logging, replace_example_docstring
+from diffusers.utils.torch_utils import randn_tensor
 from diffusers.pipelines.pipeline_utils import DiffusionPipeline
 from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
 from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
